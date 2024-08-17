@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "Norse";
+  font-style: bold;
+  src: url(/Norse-Bold.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.logo-section {
+  min-width: 40%;
+  width: 40%;
+  background-image: url(background.jpg);
+  background-size: cover;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-section img {
+  width: 100px;
+}
+
+.logo-section h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Norse";
+  font-size: 6rem;
+  background-color: rgba(0, 0, 0, 0.356);
+  text-align: center;
+  width: 100%;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+  margin-bottom: 2rem;
+}
+
+form {
+  display: flex;
+  width: 500px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+  font-size: 1rem;
+  gap: 40px 0;
+}
+
+form div {
+  margin-right: 20px;
+}
+
+label {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: rgb(59, 59, 59);
+}
+
+input {
+  margin-top: 10px;
+  padding: 0.3rem 1rem;
+  border-radius: 5px;
+  border: 0.1px solid rgba(0, 0, 0, 0.144);
+}
+
+[type=password]:invalid {
+  outline: none;
+  border: 1px solid red;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid blue;
+  box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.267);
+}
+
+button {
+  background-color: #226e13;
+  color: white;
+  padding: 1rem 3rem;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+}
+
+hr {
+  display: block;
+  width: 100%;
+}/*# sourceMappingURL=styles.css.map */
